@@ -1,19 +1,15 @@
 ﻿using System;
 
-namespace Vetor
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
+namespace Vetor {
+    class Program {
+        static void Main(string[] args) {
 
             Pensao[] vect = new Pensao[10];
 
             Console.WriteLine("how many rooms will be rented?");
             int n = int.Parse(Console.ReadLine());
 
-            for (int i = 0; i < n; i++)
-            {
+            for (int i = 0; i < n; i++) {
                 Console.Write("Student name:");
                 string name = Console.ReadLine();
                 Console.Write("Student email:");
@@ -25,8 +21,8 @@ namespace Vetor
 
             }
 
-            for (int i = 0; i < 10; i++)
-            {
+            for (int i = 0; i < 10; i++) {
+
                 if (vect[i] != null) {
                     Console.WriteLine(vect[i].Name);
                     Console.WriteLine(vect[i].Email);
